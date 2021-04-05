@@ -3,5 +3,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MarkedDownClient.Models
 {
-  public class MarkedDownClient
+  public class MarkedDownClientContext : IdentityDbContext<ApplicationUser>
+  {
+    //public DbSet<{Name}> {Name} {get; set;}
+    public MarkedDownClientContext(DbContextOptions options) : base(options) { }
+
+  }
 }

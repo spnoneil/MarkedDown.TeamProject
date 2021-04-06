@@ -28,6 +28,18 @@ namespace MarkedDownClient.Controllers
             return View();
         }
 
+        [Route("/browse")]
+        public IActionResult Browse()
+        {
+          return View();
+        }
+
+        [Route("/buy")]
+        public IActionResult Buy()
+        {
+          return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

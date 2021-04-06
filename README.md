@@ -181,8 +181,8 @@ Contributions are what make the open source community such an amazing place to b
 ## Contact Information
 
 _Chloe Loveall <chloeloveall@protonmail.com>_
-_Louie Schoenknecht <email>_
-_Scott O'Neil <email>_
+_Louie Schoenknecht <luisesch97@gmail.com>_
+_Scott O'Neil <scottieoneil@gmail.com>_
 
 ![github followers](https://img.shields.io/github/followers/chloeloveall?style=social) &nbsp; ![github forks](https://img.shields.io/github/forks/chloeloveall/MarkedDown.TeamProject?label=Forks&style=social) &nbsp; ![github stars](https://img.shields.io/github/stars/chloeloveall/MarkedDown.TeamProject?style=social)
 

@@ -32,6 +32,8 @@ namespace API
     {
       services.AddScoped<IProductRepository, ProductRepository>();
       
+      services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
+
       services.AddControllers();
 
       services.AddDbContext<StoreContext>(x =>

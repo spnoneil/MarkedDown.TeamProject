@@ -1,25 +1,59 @@
 using System.Collections.Generic;
 
-namespace Core.Entities
+namespace MarkedDownClient.Models
 {
-    public class Product : BaseEntity
+  public class Product
+  {
+    // public int ProductId { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public decimal Price { get; set; }
+
+    public string PictureUrl { get; set; }
+    // public ProductType ProductType { get; set; }
+    public int ProductTypeId { get; set; }
+    // public ProductBrand ProductBrand { get; set; }
+    public int ProductBrandId { get; set; }
+
+    public static List<Product> GetProducts()
     {
-        // public int ProductId { get; set; }
-      public string Name { get; set; }
-      public string Description { get; set; }
-      public decimal Price { get; set; }
+      var apiCallTask = ApiHelper.GetAll();
+      var result = apiCallTask.Result;
 
-      public string PictureUrl { get; set; }
-      public ProductType ProductType { get; set; }
-      public int ProductTypeId { get; set; }
-      public ProductBrand ProductBrand { get; set; }
-      public int ProductBrandId { get; set; }
+      JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
+      List<Product> productList = JsonConvert.DeserializeObject<List<Product>>(jsonResponse.ToString());
 
-      public static List<Product> GetProducts()
-      {
-
-      }
+      return productList;
     }
+
+    public static Product GetDetails(int id)
+    {
+      var apiCallTask = ApiHelper.Get(id);
+      var result = apiCallTask.Result;
+
+      JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(result);
+      Product product = JsonConvert.DeserializeObject<Product>(jsonResponse.ToString());
+
+      return product;
+    }
+
+    public static void Post(Product product)
+    {
+      string jsonProduct = JsonConvert.SerializeObject(product);
+      var apiCallTask = ApiHelper.Post(jsonProduct);
+    }
+
+    public static void Put(Product product)
+    {
+      string jsonProduct = JsonConvert.SerializeObject(product);
+      var apiCallTask = ApiHelper.Put(product.ProductId, jsonProduct);
+    }
+
+    public static void Delete(int id)
+    {
+      var apiCallTask = ApiHelper.Delete(id);
+    }      
+  }
 }
 
 

@@ -25,7 +25,6 @@ namespace MarkedDownClient.Models
 
       JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
       List<Product> productList = JsonConvert.DeserializeObject<List<Product>>(jsonResponse.ToString());
-
       return productList;
     }
 

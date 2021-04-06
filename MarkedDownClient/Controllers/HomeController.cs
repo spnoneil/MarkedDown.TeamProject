@@ -20,12 +20,30 @@ namespace MarkedDownClient.Controllers
 
         public IActionResult Index()
         {
-            return View();
+          return View();
         }
         [Route("/privacy")]
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        [Route("/browse")]
+        public IActionResult Browse()
+        {
+            return RedirectToAction("Index", "Products");
+        }
+
+        [Route("/donate")]
+        public IActionResult Donate()
+        {
+          return View();
+        }
+        
+        [Route("/about")]
+        public IActionResult About()
+        {
+          return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -30,9 +30,9 @@ namespace API.Controllers
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(string sort, int? brandId, int? typeId)
+    public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts([FromQuery]ProductSpecParams productParams)
     {
-      var spec = new ProductsWithTypesAndBrandsSpecification(sort, brandId, typeId);
+      var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
 
       var products = await _productsRepo.ListAsync(spec);
 

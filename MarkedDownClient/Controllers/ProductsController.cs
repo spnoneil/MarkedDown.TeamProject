@@ -17,12 +17,12 @@ namespace MarkedDownClient.Controllers
         return View(allProducts);
     }
 
-    [HttpPost]
-    public IActionResult Index(Product product)
-    {
-      Product.Post(product);
-      return RedirectToAction("Index");
-    }
+    // [HttpPost]
+    // public IActionResult Index(Product product)
+    // {
+    //   Product.Post(product);
+    //   return RedirectToAction("Index");
+    // }
 
     public IActionResult Details(int id)
     {
@@ -36,18 +36,18 @@ namespace MarkedDownClient.Controllers
       return View(product);
     }
 
-    [HttpPost]
-    public IActionResult Details(int id, Product product)
-    {
-      product.ProductId = id;
-      Product.Put(product);
-      return RedirectToAction("Details", id);
-    }
+    // [HttpPost]
+    // public IActionResult Details(int id, Product product)
+    // {
+    //   product.ProductId = id;
+    //   Product.Put(product);
+    //   return RedirectToAction("Details", id);
+    // }
 
-    public IActionResult Delete(int id)
-    {
-      Product.Delete(id);
-      return RedirectToAction("Index");
-    }
+    // public IActionResult Delete(int id)
+    // {
+    //   Product.Delete(id);
+    //   return RedirectToAction("Index");
+    // }
   }
 }

@@ -5,3 +5,4 @@ coverage/
 */obj/
 */bin/
 */appsettings.json
+.vscode

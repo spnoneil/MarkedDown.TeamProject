@@ -1,1 +1,1 @@
-add templates to project (in gitignore for now)
+add templates to project

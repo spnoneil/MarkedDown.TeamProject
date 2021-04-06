@@ -7,7 +7,7 @@
 #### By _**Chloe Loveall, Louie Schoenknecht & Scott O'Neil**_
 <br>
 
-![license](https://img.shields.io/github/license/chloeloveall/MarkedDown.Solution?color=blue&style=flat-square) &nbsp; ![top project language](https://img.shields.io/github/languages/top/chloeloveall/MarkedDown.TeamProject?style=flat-square) &nbsp; ![last github commit](https://img.shields.io/github/last-commit/chloeloveall/MarkedDown.TeamProject?style=flat-square) &nbsp; ![github pull requests](https://img.shields.io/github/issues-pr/chloeloveall/MarkedDown.TeamProject?style=flat-square) &nbsp; ![open issues](https://img.shields.io/github/issues-raw/chloeloveall/MarkedDown.TeamProject?style=flat-square) &nbsp; ![github contributors](https://img.shields.io/github/contributors/chloeloveall/MarkedDown.TeamProject?color=brightgreen&style=flat-square)
+![license](https://img.shields.io/github/license/chloeloveall/MarkedDown.TeamProject?color=blue&style=flat-square) &nbsp; ![top project language](https://img.shields.io/github/languages/top/chloeloveall/MarkedDown.TeamProject?style=flat-square) &nbsp; ![last github commit](https://img.shields.io/github/last-commit/chloeloveall/MarkedDown.TeamProject?style=flat-square) &nbsp; ![github pull requests](https://img.shields.io/github/issues-pr/chloeloveall/MarkedDown.TeamProject?style=flat-square) &nbsp; ![open issues](https://img.shields.io/github/issues-raw/chloeloveall/MarkedDown.TeamProject?style=flat-square) &nbsp; ![github contributors](https://img.shields.io/github/contributors/chloeloveall/MarkedDown.TeamProject?color=brightgreen&style=flat-square)
 
 ## Table of Contents
 
@@ -181,9 +181,9 @@ Contributions are what make the open source community such an amazing place to b
 ## Contact Information
 
 _Chloe Loveall <chloeloveall@protonmail.com>_
-_Louie Schoenknecht <email>_
-_Scott O'Neil <email>_
+_Louie Schoenknecht <luisesch97@gmail.com>_
+_Scott O'Neil <scottieoneil@gmail.com>_
 
-![github followers](https://img.shields.io/github/followers/chloeloveall?style=social) &nbsp; ![github forks](https://img.shields.io/github/forks/chloeloveall/Factory.Solution?label=Forks&style=social) &nbsp; ![github stars](https://img.shields.io/github/stars/chloeloveall/Factory.Solution?style=social)
+![github followers](https://img.shields.io/github/followers/chloeloveall?style=social) &nbsp; ![github forks](https://img.shields.io/github/forks/chloeloveall/MarkedDown.TeamProject?label=Forks&style=social) &nbsp; ![github stars](https://img.shields.io/github/stars/chloeloveall/MarkedDown.TeamProject?style=social)
 
 [Back to Top](#table-of-contents)

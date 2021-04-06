@@ -20,7 +20,7 @@ namespace MarkedDownClient.Controllers
 
         public IActionResult Index()
         {
-            return View();
+          return View();
         }
         [Route("/privacy")]
         public IActionResult Privacy()
@@ -31,11 +31,11 @@ namespace MarkedDownClient.Controllers
         [Route("/browse")]
         public IActionResult Browse()
         {
-          return View();
+            return RedirectToAction("Index", "Products");
         }
 
-        [Route("/buy")]
-        public IActionResult Buy()
+        [Route("/donate")]
+        public IActionResult Donate()
         {
           return View();
         }

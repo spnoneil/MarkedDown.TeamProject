@@ -13,9 +13,15 @@ namespace MarkedDownClient.Controllers
   {
     public IActionResult Index()
     {
-      var allProducts = Product.GetProducts();
-        return View(allProducts);
+      return View();
+      // List<Product> allProducts = Product.GetProducts();
+      // return View(allProducts);
     }
+
+
+
+
+
 
     // [HttpPost]
     // public IActionResult Index(Product product)
@@ -30,11 +36,11 @@ namespace MarkedDownClient.Controllers
       return View(product);
     }
 
-    public IActionResult Edit(int id)
-    {
-      var product = Product.GetDetails(id);
-      return View(product);
-    }
+    // public IActionResult Edit(int id)
+    // {
+    //   var product = Product.GetDetails(id);
+    //   return View(product);
+    // }
 
     // [HttpPost]
     // public IActionResult Details(int id, Product product)

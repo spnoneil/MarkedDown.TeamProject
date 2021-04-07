@@ -9,47 +9,46 @@ using MarkedDownClient.Models;
 
 namespace MarkedDownClient.Controllers
 {
-    public class HomeController : Controller
+  public class HomeController : Controller
+  {
+    private readonly ILogger<HomeController> _logger;
+
+    public HomeController(ILogger<HomeController> logger)
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
-        {
-          return View();
-        }
-        [Route("/privacy")]
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [Route("/browse")]
-        public IActionResult Browse()
-        {
-            return RedirectToAction("Index", "Products");
-        }
-
-        [Route("/donate")]
-        public IActionResult Donate()
-        {
-          return View();
-        }
-        
-        [Route("/about")]
-        public IActionResult About()
-        {
-          return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        _logger = logger;
     }
+
+    public IActionResult Index()
+    {
+      return View();
+    }
+
+    [Route("/privacy")]
+    public IActionResult Privacy()
+    {
+      return View();
+    }
+    [Route("/browse")]
+    public IActionResult Browse()
+    {
+      return RedirectToAction("Index", "Products");
+    }
+
+    [Route("/about")]
+    public IActionResult About()
+    {
+      return View();
+    }
+    [Route("/donate")]
+    public IActionResult Donate()
+    {
+      return View();
+    }
+
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    public IActionResult Error()
+    {
+      return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+  }
 }

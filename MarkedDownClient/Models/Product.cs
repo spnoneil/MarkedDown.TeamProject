@@ -2,12 +2,13 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
+using System;
 
 namespace MarkedDownClient.Models
 {
   public class Product
   {
-    public int ProductId { get; set; }
+    public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public decimal Price { get; set; }
@@ -17,14 +18,15 @@ namespace MarkedDownClient.Models
     public int ProductTypeId { get; set; }
     // public ProductBrand ProductBrand { get; set; }
     public int ProductBrandId { get; set; }
-
+    
     public static List<Product> GetProducts()
     {
       var apiCallTask = ApiHelper.GetAll();
-      var result = apiCallTask.Result;
+      var result = apiCallTask.ToString();
 
       JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
       List<Product> productList = JsonConvert.DeserializeObject<List<Product>>(jsonResponse.ToString());
+
       return productList;
     }
 

@@ -177,6 +177,8 @@ Contributions are what make the open source community such an amazing place to b
 * [Shields](https://shields.io/)
 * [Unplash: Photos for Everyone](https://unsplash.com/)
 * [StartUp Ipsum](https://startupsum.com/)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+* [dbader README-Template](https://github.com/dbader/readme-template)
 
 ## Contact Information
 

@@ -1,0 +1,74 @@
+[
+  {
+    "Name": "Toast",
+    "Description": "Business-to-business twitter burn rate direct mailing research & development niche market launch party buzz seed round iPhone stock.",
+    "Price": 130,
+    "PictureUrl": "images/products/toast.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "PHP Censor",
+    "Description": "First mover advantage beta incubator agile development return on investment technology.",
+    "Price": 150,
+    "PictureUrl": "images/products/php-censor.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Gaze",
+    "Description": "Conversion iteration focus research & development deployment strategy freemium advisor.",
+    "Price": 180,
+    "PictureUrl": "images/products/gaze.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Nerd Fonts",
+    "Description": "Graphical user interface infographic beta rockstar business plan partner network business model canvas social proof.",
+    "Price": 300,
+    "PictureUrl": "images/products/nerd-fonts.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "React on lambda",
+    "Description": "Angel investor partnership first mover advantage hackathon buyer mass market.",
+    "Price": 250,
+    "PictureUrl": "images/products/react-on-lambda.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Node.JS Chat",
+    "Description": "Virality equity scrum project gen-z success twitter growth hacking startup marketing lean startup focus vesting period.",
+    "Price": 120,
+    "PictureUrl": "images/products/node-js-chat.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "Closures",
+    "Description": "Startup incubator entrepreneur value proposition marketing return on investment interaction design.",
+    "Price": 10,
+    "PictureUrl": "images/products/closures.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "SDVersion",
+    "Description": "Metrics focus prototype assets lean startup social media product management branding deployment series A financing influencer.",
+    "Price": 75,
+    "PictureUrl": "images/products/sdversion.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "ReDoc",
+    "Description": "Launch party virality ecosystem niche market business model canvas holy grail.",
+    "Price": 25,
+    "PictureUrl": "images/products/redoc.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 4
+  }
+]

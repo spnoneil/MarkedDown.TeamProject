@@ -55,6 +55,14 @@ for details on configuring this project to bundle and minify static web assets. 
     cursor: pointer;
   }
   
+  .splashcontent {
+    border: 3px inset rgb(243, 238, 191);
+    background-color: lightblue;
+    margin-bottom: 60px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 30px;
+  }
+  
   a.navbar-brand {
     white-space: normal;
     text-align: center;

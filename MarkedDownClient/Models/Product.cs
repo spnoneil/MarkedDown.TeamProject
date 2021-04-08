@@ -14,9 +14,9 @@ namespace MarkedDownClient.Models
     public decimal Price { get; set; }
 
     public string PictureUrl { get; set; }
-    public ProductType ProductType { get; set; }
+    public string ProductType { get; set; }
     // public int ProductTypeId { get; set; }
-    public ProductBrand ProductBrand { get; set; }
+    public string ProductBrand { get; set; }
     // public int ProductBrandId { get; set; }
     
     public static List<Product> GetProducts()
@@ -25,7 +25,7 @@ namespace MarkedDownClient.Models
       var result = apiCallTask.Result;
 
       JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
-      List<Product> productList = JsonConvert.DeserializeObject<List<Product>>(result["data"].ToString());
+      List<Product> productList = JsonConvert.DeserializeObject<List<Product>>(result.ToString());
 
       return productList;
     }

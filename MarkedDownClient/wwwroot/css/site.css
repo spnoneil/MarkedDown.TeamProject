@@ -16,17 +16,15 @@ for details on configuring this project to bundle and minify static web assets. 
   color: seashell;
 }
 
+.abouttext {
+  color: #1D3557;
+}
+
 .aboutimg {
   border-radius: 25% 25% 25% 25%;
   border: 3px inset rgb(201, 197, 197);
   height: 200px;
   width: auto;
-}
-
-.abouttext {
-  position: absolute;
-  top: 25%;
-  left: 25%;
 }
 
 .productimgs {

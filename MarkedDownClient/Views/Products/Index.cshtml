@@ -7,17 +7,74 @@
 
 <h1>Examples of our READMEs</h1>
 
-<img class="productimgs" src="~/img/template3.1.jpg">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#example1">
+  Check some examples:
+</button>
 
-<img class="productimgs" src="~/img/template2.1.jpg">
+<div class="modal fade" id="example1" tabindex="-1" role="dialog" aria-labelledby="example1Label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="example1Label">DB output goes here:</h4>
+      </div>
+      <div class="modal-body">
+        <img class="productimgs" src="~/img/template3.1.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<img class="productimgs" src="~/img/template1.jpg">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#example1">
+  Check some examples:
+</button>
 
-@if (Model.Count == 0)
+<div class="modal fade" id="example2" tabindex="-1" role="dialog" aria-labelledby="example2Label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="example2Label">DB output goes here:</h4>
+      </div>
+      <div class="modal-body">
+        <img class="productimgs" src="~/img/template2.1.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#example1">
+  Check some examples:
+</button>
+
+<div class="modal fade" id="example1" tabindex="-1" role="dialog" aria-labelledby="example1Label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="example1Label">DB output goes here:</h4>
+      </div>
+      <div class="modal-body">
+        <img class="productimgs" src="~/img/template11.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+@* @if (Model.Count == 0)
 {
   <h3>There are no products currently available</h3>
   <p>Please check back at a later time</p>
-}
+} *@
 
 @* <ul>
   @foreach(Product product in Model)

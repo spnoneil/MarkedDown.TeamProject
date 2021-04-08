@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using MarkedDownClient.Models;
 
 namespace MarkedDownClient.Controllers
@@ -13,9 +12,9 @@ namespace MarkedDownClient.Controllers
   {
     public IActionResult Index()
     {
-      // return View();
-      List<Product> allProducts = Product.GetProducts();
-      return View(allProducts);
+      return View();
+      // var allProducts = Product.GetProducts();
+      // return View(allProducts);
     }
 
 

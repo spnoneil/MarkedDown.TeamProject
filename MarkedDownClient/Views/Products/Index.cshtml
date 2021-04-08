@@ -2,9 +2,16 @@
   Layout = "_Layout";
 }
 
+
 @using MarkedDownClient;
 
-<h1>Products</h1>
+<h1>Examples of our READMEs</h1>
+
+<img class="productimgs" src="~/img/template3.1.jpg">
+
+<img class="productimgs" src="~/img/template2.1.jpg">
+
+<img class="productimgs" src="~/img/template1.jpg">
 
 @if (Model.Count == 0)
 {
@@ -12,12 +19,12 @@
   <p>Please check back at a later time</p>
 }
 
-<ul>
+@* <ul>
   @foreach(Product product in Model)
   {
     <li>@Html.ActionLink($"{product.Name}", "Details", new {id = product.ProductId}) </li>
   }
-</ul>
+</ul> *@
 
 @* <p>@Html.ActionLink("Add new product", "Create")</p> *@
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+@* <p>@Html.ActionLink("Home", "Index", "Home")</p> *@

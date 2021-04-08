@@ -1,6 +1,15 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+.navbar {
+  background: linear-gradient(#F1FAEE, #A8DADC);
+}
+
+.socials {
+  position: relative;
+  bottom: -200px;
+}
+
 .about-container {
   position: relative;
   text-align: center;
@@ -18,6 +27,16 @@ for details on configuring this project to bundle and minify static web assets. 
   position: absolute;
   top: 25%;
   left: 25%;
+}
+
+.productimgs {
+  height: auto;
+  width: 50%;
+  margin: 10%;
+}
+
+.nav-item:hover {
+  cursor: pointer;
 }
 
 a.navbar-brand {
@@ -89,6 +108,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-color: #F1FAEE;
 }
 
 .footer {
@@ -97,5 +117,6 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+  background-color: #A8DADC;
   /* Vertically center the text there */
 }

@@ -34,13 +34,13 @@ namespace MarkedDownClient.Controllers
       return RedirectToAction("Index", "Products");
     }
 
-    [Route("/about")]
-    public IActionResult About()
+    [Route("/donate")]
+    public IActionResult Donate()
     {
       return View();
     }
-    [Route("/donate")]
-    public IActionResult Donate()
+    [Route("/about")]
+    public IActionResult About()
     {
       return View();
     }

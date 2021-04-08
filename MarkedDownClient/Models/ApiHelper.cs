@@ -9,8 +9,8 @@ namespace MarkedDownClient.Models
     public static async Task<string> GetAll()
     {
       RestClient client = new RestClient("https://localhost:5001/api");
-      RestRequest request = new RestRequest($"Products", Method.GET);
-      var response = await client.ExecuteTaskAsync(request);
+      RestRequest request = new RestRequest($"products", Method.GET);
+      var response = await client.ExecuteAsync(request);
       
       return response.Content;
     }

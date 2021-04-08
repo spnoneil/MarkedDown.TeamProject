@@ -2,8 +2,22 @@
   Layout = "_Layout";
 }
 
+<h1>All Products:</h1>
 
-@using MarkedDownClient;
+@* <ol>
+@foreach (Product product in Model)
+{
+    <ul>
+        <li>ID: @product.Id</li>
+        <li>Name: @product.Name</li>
+        <li>Description: @product.Description</li>
+        <li>Price: @product.Price</li>
+        <li>PictureUrl: @product.PictureUrl</li>
+    </ul>
+    <a href="/Products/Details/@(product.Id)"><p>View Details</p></a>
+    <br>
+}
+</ol> *@
 
 <h1>Examples of our READMEs</h1>
 
@@ -28,7 +42,7 @@
   </div>
 </div>
 
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#example1">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#example2">
   Check some examples:
 </button>
 
@@ -40,7 +54,7 @@
         <h4 class="modal-title" id="example2Label">DB output goes here:</h4>
       </div>
       <div class="modal-body">
-        <img class="productimgs" src="~/img/template2.1.jpg">
+        <img class="productimgs" src="~/img/template4.jpg">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -49,11 +63,11 @@
   </div>
 </div>
 
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#example1">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#example3">
   Check some examples:
 </button>
 
-<div class="modal fade" id="example1" tabindex="-1" role="dialog" aria-labelledby="example1Label">
+<div class="modal fade" id="example3" tabindex="-1" role="dialog" aria-labelledby="example3Label">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -61,7 +75,7 @@
         <h4 class="modal-title" id="example1Label">DB output goes here:</h4>
       </div>
       <div class="modal-body">
-        <img class="productimgs" src="~/img/template11.jpg">
+        <img class="productimgs" src="~/img/template5.jpg">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
